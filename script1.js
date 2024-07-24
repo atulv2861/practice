@@ -44,5 +44,6 @@ const debouncedCount=myDebounce(()=>{
 
 btn.addEventListener("click",()=>{
     btnPressed.innerHTML=++pressedCount;
-    throttled();
+    //throttled();
+    debouncedCount();
 })
