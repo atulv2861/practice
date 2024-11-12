@@ -7,7 +7,7 @@ let pressedCount=0;
 
 // -------------Throttling--------------
 //time interval
-const start=new Date().getTime();
+//const start=new Date().getTime();
 
 const myThrottle=(cb,d)=>{
     let last=0;
@@ -44,6 +44,6 @@ const debouncedCount=myDebounce(()=>{
 
 btn.addEventListener("click",()=>{
     btnPressed.innerHTML=++pressedCount;
-    //throttled();
-    debouncedCount();
+    throttled();
+    //debouncedCount();
 })
